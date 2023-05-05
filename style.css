@@ -43,7 +43,7 @@ body{
     width: 300px;
     opacity: 0;
     transition: .5s ease;
-    background:hsl(178, 100%, 50%);
+    background:hsla(178, 100%, 50%, 0.5);
     border-radius: 5px;
     display: grid;
     place-items: center;
@@ -51,7 +51,7 @@ body{
 }
 
 .nft-container:hover .overlay{
-    opacity: .5;
+    opacity: 1;
 }
 
 section{
