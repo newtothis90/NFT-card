@@ -25,11 +25,33 @@ body{
 
 .nft-container{
     width: 350px;
+    position: relative;
 }
 
 .nft-image{
     width: 300px;
-    border-radius: 5px; 
+    border-radius: 5px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background:hsl(178, 100%, 50%);
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.nft-container:hover .overlay{
+    opacity: .5;
 }
 
 section{
@@ -115,6 +137,4 @@ a{
 a:hover{
     color:hsl(178, 100%, 50%);
 }
-
-
 
